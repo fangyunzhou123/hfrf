@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="./jquery.SuperSlide.2.1.1.js"></script>
+    <style>
+.slideTxtBox{ width:450px; text-align:left;  }
+.slideTxtBox .bd ul{ padding:15px;  zoom:1;  }
+.slideTxtBox .bd li{  line-height:300px;   }
+.slideTxtBox .bd li img{width: 70%;height: 70%;display: inline-block;}
+.title{line-height: 50px}
+ul li{list-style: none;}
+
+    </style>
+</head>
+<body>
+    <div class="slideTxtBox">
+
+			<div class="bd">
+                    <ul class="picList">
+                        <li>
+                            <div class="pic"><a href="#"><img src="./c1.jpg"/></a></div>
+                            <div class="title"><a href="#">效果图1</a></div>
+                        </li>
+                        <li>
+                                <div class="pic"><a href="#"><img src="./c1.jpg"/></a></div>
+                                <div class="title"><a href="#">效果图1</a></div>
+                            </li>                        <li>
+                                    <div class="pic"><a href="#"><img src="./c1.jpg"/></a></div>
+                                    <div class="title"><a href="#">效果图1</a></div>
+                                </li>                        <li>
+                                        <div class="pic"><a href="#"><img src="./c1.jpg"/></a></div>
+                                        <div class="title"><a href="#">效果图1</a></div>
+                                    </li>                        <li>
+                                            <div class="pic"><a href="#"><img src="./c1.jpg"/></a></div>
+                                            <div class="title"><a href="#">效果图1</a></div>
+                                        </li>                        <li>
+                                                <div class="pic"><a href="#"><img src="./c1.jpg"/></a></div>
+                                                <div class="title"><a href="#">效果图1</a></div>
+                                            </li>                        <li>
+                                                    <div class="pic"><a href="#"><img src="./c1.jpg"/></a></div>
+                                                    <div class="title"><a href="#">效果图1</a></div>
+                                                </li>
+
+                    </ul>
+                </div>
+    </div>
+</body>
+</html>
+<script>jQuery(".slideTxtBox").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:3,interTime:50,trigger:"click"});</script>
